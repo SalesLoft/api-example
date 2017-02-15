@@ -1,8 +1,9 @@
 require 'rubygems'
 require 'bundler/setup'
 Bundler.require(:default)
+require 'sinatra'
 require 'yaml/store'
-require_relative 'server_ssl'
+require_relative 'server/server_ssl'
 
 use Rack::Session::Cookie
 use OmniAuth::Builder do
@@ -23,9 +24,9 @@ end
 
 get '/auth/salesloft/callback' do
   credentials = request.env['omniauth.auth'][:credentials]
-  store = YAML::Store.new "../credentials.store"
+  store = YAML::Store.new "credentials.store"
   store.transaction do
-    store[:credentials] = credentials
+    store[:credentials] = credentials.to_h
   end
   redirect '/?success'
 end
