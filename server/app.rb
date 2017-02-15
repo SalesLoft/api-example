@@ -23,7 +23,7 @@ end
 
 get '/auth/salesloft/callback' do
   credentials = request.env['omniauth.auth'][:credentials]
-  store = YAML::Store.new "credentials.store"
+  store = YAML::Store.new "../credentials.store"
   store.transaction do
     store[:credentials] = credentials
   end
