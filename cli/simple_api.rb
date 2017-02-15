@@ -1,5 +1,3 @@
-require 'ostruct'
-
 class SimpleApi
   BASE_URI = 'app.salesloft.com'
   include HTTParty
