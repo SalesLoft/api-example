@@ -1,0 +1,48 @@
+PATH
+  remote: ../omniauth-salesloft
+  specs:
+    omniauth-salesloft (0.0.3)
+      omniauth (>= 1.1.1)
+      omniauth-oauth2 (>= 1.3.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    faraday (0.10.1)
+      multipart-post (>= 1.2, < 3)
+    hashie (3.5.3)
+    jwt (1.5.6)
+    multi_json (1.12.1)
+    multi_xml (0.6.0)
+    multipart-post (2.0.0)
+    oauth2 (1.3.0)
+      faraday (>= 0.8, < 0.11)
+      jwt (~> 1.0)
+      multi_json (~> 1.3)
+      multi_xml (~> 0.5)
+      rack (>= 1.2, < 3)
+    omniauth (1.5.0)
+      hashie (~> 3.5.0, < 4)
+      rack (>= 1.6.2, < 3)
+    omniauth-oauth2 (1.4.0)
+      oauth2 (~> 1.0)
+      omniauth (~> 1.2)
+    rack (1.6.5)
+    rack-protection (1.5.3)
+      rack
+    sinatra (1.4.8)
+      rack (~> 1.5)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+    tilt (2.0.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  omniauth
+  omniauth-salesloft!
+  sinatra
+
+BUNDLED WITH
+   1.11.2
