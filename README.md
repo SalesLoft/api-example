@@ -46,6 +46,6 @@ Your credentials are stored in a YAML::Store instance `credentials.store`. Do no
 anyone as they can be used to access your account; the file is in .gitignore. Treat them as you would a password.
 If you store credentials on your server, please do so in a secure manner.
 
-## Questions
+## How do I get started?
 
-Please email integrations at salesloft dot com to get started with the SalesLoft API and with any questions you have.
+Please email [mailto:integrations@salesloft.com](integrations@salesloft.com) to get started with the SalesLoft API and with any questions you have.
