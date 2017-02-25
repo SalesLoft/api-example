@@ -3,7 +3,7 @@
 SalesLoft API provides an easy REST-ful way to programmatically interact with your SalesLoft
 instance data. After using OAuth 2.0 to authorize an account, the REST API is accessed over
 HTTP to push and pull data from SalesLoft. The SalesLoft API is documented at
-https://sdr.salesloft.com/swagger/index.html.
+https://app.salesloft.com/swagger/index.html.
 
 ## Getting Started
 
