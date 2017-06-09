@@ -1,5 +1,5 @@
 class SimpleApi
-  BASE_URI = 'app.salesloft.com'
+  BASE_URI = 'api.salesloft.com'
   include HTTParty
   base_uri BASE_URI
 
