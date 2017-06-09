@@ -48,7 +48,7 @@ If you store credentials on your server, please do so in a secure manner.
 
 ## How do I get started?
 
-Please email [integrations@salesloft.com](mailto:integrations@salesloft.com) to get started with the SalesLoft API and with any questions you have.
+Please email [support@salesloft.com](mailto:support@salesloft.com) to get started with the SalesLoft API and with any questions you have.
 
 ## SalesLoft Basic Resources
 
