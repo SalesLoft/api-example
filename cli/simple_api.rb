@@ -12,8 +12,9 @@ class SimpleApi
     self.class.get(url('me.json'), headers: @token.headers).parsed_response
   end
 
+  # Don't submit to .json if you're using the email as the identifier
   def get_person(id)
-    self.class.get(url("people/#{id}.json"), headers: @token.headers).parsed_response
+    self.class.get(url("people/#{id}"), headers: @token.headers).parsed_response
   end
 
   def create_person(data)

@@ -29,7 +29,9 @@ puts "Person Updating:"
 puts "\tPerson #{person["id"]} was updated to have a different name."
 
 # Find the person by email
+id_lookup_person = api.get_person(person["id"])
 email_lookup_person = api.get_person(person["email_address"])
+puts "Id and email lookup are the same? #{id_lookup_person == email_lookup_person}"
 puts "Person email lookup:"
 puts "\tPeople can be looked up by their email address, like #{email_lookup_person["id"]} was just looked up."
 
