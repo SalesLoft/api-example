@@ -14,7 +14,7 @@ into 2 stages:
 2. Run a cli script that interacts with your data, creating a person and adding them to a cadence.
 
 Before you can get started with this example, you'll need to obtain an API token from SalesLoft. This
-can be done by emailing integrations at salesloft dot com. You will need a redirect uri to do so. Please
+can be done by emailing [support@salesloft.com](mailto:support@salesloft.com). You will need a redirect uri to do so. Please
 provide `https://localhost:8443` if you want to authorize this example code.
 
 ## Running Server to Authorize
