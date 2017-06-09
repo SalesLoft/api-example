@@ -9,20 +9,20 @@ class SimpleApi
   end
 
   def me
-    self.class.get(url('me.json'), headers: @token.headers).parsed_response
+    self.class.get(url('me'), headers: @token.headers).parsed_response
   end
 
-  # Don't submit to .json if you're using the email as the identifier
+  # Don't submit to  if you're using the email as the identifier
   def get_person(id)
     self.class.get(url("people/#{id}"), headers: @token.headers).parsed_response
   end
 
   def create_person(data)
-    self.class.post(url('people.json'), headers: @token.headers, body: data).parsed_response
+    self.class.post(url('people'), headers: @token.headers, body: data.to_json).parsed_response
   end
 
   def update_person(id, data)
-    self.class.put(url("people/#{id}.json"), headers: @token.headers, body: data).parsed_response
+    self.class.put(url("people/#{id}"), headers: @token.headers, body: data.to_json).parsed_response
   end
 
   def person_url(id)
@@ -30,11 +30,11 @@ class SimpleApi
   end
 
   def cadences
-    self.class.get(url("cadences.json"), headers: @token.headers).parsed_response
+    self.class.get(url("cadences"), headers: @token.headers).parsed_response
   end
 
   def add_person_to_cadence(person_id, cadence_id)
-    self.class.post(url("people/#{person_id}/cadence_memberships.json"), headers: @token.headers, body: { cadence_id: cadence_id }).parsed_response
+    self.class.post(url("people/#{person_id}/cadence_memberships"), headers: @token.headers, body: { cadence_id: cadence_id }.to_json).parsed_response
   end
 
   def cadence_people_url(cadence_id)

@@ -19,7 +19,8 @@ class Token
 
   def headers
     {
-      Authorization: "Bearer #{access_token}"
+      "Authorization" => "Bearer #{access_token}",
+      "Content-Type" => "application/json"
     }
   end
 
