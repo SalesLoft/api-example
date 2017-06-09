@@ -3,7 +3,7 @@
 SalesLoft API provides an easy REST-ful way to programmatically interact with your SalesLoft
 instance data. After using OAuth 2.0 to authorize an account, the REST API is accessed over
 HTTP to push and pull data from SalesLoft. The SalesLoft API is documented at
-https://app.salesloft.com/swagger/index.html.
+https://api.salesloft.com/swagger/index.html.
 
 ## Getting Started
 
@@ -52,22 +52,22 @@ Please email [integrations@salesloft.com](mailto:integrations@salesloft.com) to 
 
 ## SalesLoft Basic Resources
 
-The following are core resources that the SalesLoft API exposes. All resources are listed in detail on our [documentation](https://app.salesloft.com/swagger/index.html).
+The following are core resources that the SalesLoft API exposes. All resources are listed in detail on our [documentation](https://api.salesloft.com/swagger/index.html).
 
-### [Person](https://app.salesloft.com/swagger/index.html#!/People/PublicApi_V1_People_create)
+### [Person](https://api.salesloft.com/swagger/index.html#!/People/PublicApi_V1_People_create)
 
-A Person is an instance of an individual that is being reached out to through the SalesLoft platform. Users can email, call, and execute social steps on people. 
+A Person is an instance of an individual that is being reached out to through the SalesLoft platform. Users can email, call, and execute social steps on people.
 
 The SalesLoft API provides endpoints to get, create, and update single Person objects.
 
-### [Cadence](https://app.salesloft.com/swagger/index.html#!/Cadences/PublicApi_V1_Cadences_index)
+### [Cadence](https://api.salesloft.com/swagger/index.html#!/Cadences/PublicApi_V1_Cadences_index)
 
 A Cadence is the definition of how communication happens. An example Cadence could be "7x7" where 7 touches happen over 7 days. This example Cadence might consist of call, email, or other steps.
 
-The SalesLoft API provides endpoints to list all cadences for a user or for the team (requires admin OAuth connection). The [PersonCadenceMembership](https://app.salesloft.com/swagger/index.html#!/Person_Cadence_Memberships/PublicApi_V1_PersonCadenceMemberships_index) is used to add a Person to a Cadence.
+The SalesLoft API provides endpoints to list all cadences for a user or for the team (requires admin OAuth connection). The [PersonCadenceMembership](https://api.salesloft.com/swagger/index.html#!/Person_Cadence_Memberships/PublicApi_V1_PersonCadenceMemberships_index) is used to add a Person to a Cadence.
 
-### [Company](https://app.salesloft.com/swagger/index.html#!/Companies/PublicApi_V1_Companies_create)
+### [Company](https://api.salesloft.com/swagger/index.html#!/Companies/PublicApi_V1_Companies_create)
 
 A Company contains information about the company that people work for. Companies consist of not only information about the company, but also about the people who work for the company.
 
-The SalesLoft API provides endpoints to get, create, and update single Company objects. A Person's Company can be changed by setting the `company_id` attribute on the [Person update request](https://app.salesloft.com/swagger/index.html#!/People/PublicApi_V1_People_update).
+The SalesLoft API provides endpoints to get, create, and update single Company objects. A Person's Company can be changed by setting the `company_id` attribute on the [Person update request](https://api.salesloft.com/swagger/index.html#!/People/PublicApi_V1_People_update).
