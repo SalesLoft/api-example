@@ -1,5 +1,5 @@
 class SimpleApi
-  BASE_URI = 'api.salesloft.com'
+  BASE_URI = 'https://api.salesloft.com'
   include HTTParty
   base_uri BASE_URI
 
@@ -26,7 +26,7 @@ class SimpleApi
   end
 
   def person_url(id)
-    "https://#{BASE_URI}/app/people/#{id}"
+    "#{BASE_URI}/app/people/#{id}"
   end
 
   def cadences
@@ -38,7 +38,7 @@ class SimpleApi
   end
 
   def cadence_people_url(cadence_id)
-    "https://#{BASE_URI}/app/cadences_v2/#{cadence_id}/v2/cadence_people"
+    "#{BASE_URI}/app/cadences_v2/#{cadence_id}/v2/cadence_people"
   end
 
   private
