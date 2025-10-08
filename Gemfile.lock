@@ -1,23 +1,26 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    base64 (0.3.0)
     faraday (0.11.0)
       multipart-post (>= 1.2, < 3)
-    hashie (3.5.3)
+    hashie (5.0.0)
     httparty (0.14.0)
       multi_xml (>= 0.5.2)
     jwt (1.5.6)
     multi_json (1.12.1)
     multi_xml (0.6.0)
     multipart-post (2.0.0)
+    mustermann (3.0.4)
+      ruby2_keywords (~> 0.0.1)
     oauth2 (1.3.1)
       faraday (>= 0.8, < 0.12)
       jwt (~> 1.0)
       multi_json (~> 1.3)
       multi_xml (~> 0.5)
       rack (>= 1.2, < 3)
-    omniauth (1.5.0)
-      hashie (~> 3.5.0, < 4)
+    omniauth (1.9.2)
+      hashie (>= 3.4.6)
       rack (>= 1.6.2, < 3)
     omniauth-oauth2 (1.4.0)
       oauth2 (~> 1.0)
@@ -25,23 +28,26 @@ GEM
     omniauth-salesloft (1.0.0)
       omniauth (>= 1.1.1)
       omniauth-oauth2 (>= 1.3.1)
-    rack (1.6.5)
-    rack-protection (1.5.3)
-      rack
-    sinatra (1.4.8)
-      rack (~> 1.5)
-      rack-protection (~> 1.4)
-      tilt (>= 1.3, < 3)
-    tilt (2.0.6)
+    rack (2.2.19)
+    rack-protection (3.2.0)
+      base64 (>= 0.1.0)
+      rack (~> 2.2, >= 2.2.4)
+    ruby2_keywords (0.0.5)
+    sinatra (3.2.0)
+      mustermann (~> 3.0)
+      rack (~> 2.2, >= 2.2.4)
+      rack-protection (= 3.2.0)
+      tilt (~> 2.0)
+    tilt (2.6.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   httparty
-  omniauth
+  omniauth (>= 1.6.0)
   omniauth-salesloft
-  sinatra
+  sinatra (>= 2.0.0)
 
 BUNDLED WITH
-   1.11.2
+   2.3.27
