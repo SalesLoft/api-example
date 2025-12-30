@@ -4,4 +4,4 @@ gem "sinatra", require: false
 gem "omniauth"
 gem "omniauth-salesloft"
 
-gem "httparty"
+gem "httparty", ">= 0.24.0"
